@@ -1,35 +1,47 @@
 import React from 'react';
+// import wedding_prep_bw from "../../../img/wedding-prep/wedding_prep_bw.jpg";
+// import Button from "../../utils/Button";
 
-const MyStory = () => {
+const MyComponent = () => {
     return (
-        <div className="p-16 w-full h-full">
+        <div className="w-full mb-10 md:mb-20 px-4 md:px-16 pt-4 md:pt-16">
+            <div className="flex flex-col-reverse md:flex-row bg-grayLightGreen">
+                <div className="md:w-1/2">
+                    <div className="w-full h-full flex justify-center items-center mb-10 md:mb-0">
+                        <div className="flex flex-col items-center">
+                            <h2 className="font-vollkorn font-light uppercase font-bold font-vollkorn pt-14 md:pt-0 pb-4">
+                                DELUXE
+                            </h2>
+                            <p className="font-cprime font-light pb-9 md:pb-12"> A3 60 Page Photo-book
+                                <br/>
+                                Two Photographers
+                                <br/>
+                                All Edited Photos
+                                <br/>
+                                Private Online Gallery & Delivery
+                                <br/>
+                                Engagement Photo-shoot
+                                <br/>
+                                Evening Reception Coverage
+                                <br/>
+                                Duration: Till 10pm
+                                <br/>
+                                4-6 Weeks Editing
 
-            <div className="row no-gutters justify-content-center align-items-center">
-                <div className="col-9 col-md-6 pricing__photo-wrapper">
-                    <div className=" bg-[url(//images-pw.pixieset.com/elementfield/987091901/Onesmus__Wanjiru-354-dd64376e.jpg)] bg-[54% 11%]"></div>
-                </div>
-                <div
-                    className="col-9 col-md-6 pricing__text-wrapper d-flex align-items-center justify-content-center">
-                    <div className="pricing__text text-center">
-                        <h2 className="pricing__title ca-package-name-lgjO42">DELUXE</h2>
-                        <hr className="pricing__divider vertical-line vertical-line--sm ca-divider-DNORPB"/>
-                        <p className="pricing__description ca-description-LBKEqg">
-                            A3 60 Page Photo-book<br/>
-                            Two Photographers<br/>
-                            All Edited Photos<br/>
-                            Private Online Gallery &amp; Delivery<br/>
-                            Engagement Photo-shoot<br/>
-                            Evening Reception Coverage<br/>
-                            Duration: Till 10pm<br/>
-                            4-6 Weeks Editing<br/>
-                        </p>
-                        <p className="pricing__price detail ca-price-RBJEo2">KES 250,000</p>
+                                </p>
+                            <p>KES 250,000</p>
+                            {/*<a href="/book-me">*/}
+                            {/*    <Button className="font-vollkorn uppercase text-2xl" text={"Book a session"}></Button>*/}
+                            {/*</a>*/}
+                        </div>
                     </div>
                 </div>
+                <div className="md:w-1/2">
+                    <img className="w-full h-[30vh] md:h-[500px] object-cover" src="https://www.dropbox.com/s/36wj2vzflqw3d20/_DSF9261-min.jpg?dl=1" alt="wedding preparation"/>
+                </div>
             </div>
-
         </div>
     );
 };
 
-export default MyStory;
+export default MyComponent;
