@@ -2,37 +2,34 @@ import React from 'react';
 // import wedding_prep_bw from "../../../img/wedding-prep/wedding_prep_bw.jpg";
 // import Button from "../../utils/Button";
 
-const MyComponent = () => {
+const MyComponent = (props) => {
     return (
         <div className="w-full mb-10 md:mb-20 px-4 md:px-16 pt-4 md:pt-16">
             <div className="flex flex-col-reverse md:flex-row bg-grayLightGreen">
                 <div className="md:w-1/2">
                     <div className="w-full h-full flex justify-center items-center mb-10 md:mb-0">
                         <div className="flex flex-col items-center">
-                            <h2 className="font-vollkorn font-light uppercase font-bold font-vollkorn pt-14 md:pt-0 pb-4">
-                                DELUXE
+                            <h2 className="font-vollkorn uppercase font-bold font-vollkorn pt-14 md:pt-0 pb-4">
+                                {props.title}
                             </h2>
-                            <p className="font-cprime font-light pb-9 md:pb-12"> A3 60 Page Photo-book
+                            <p className="font-cprime font-light pb-9 md:pb-12">
+                                {props.description1}
                                 <br/>
-                                Two Photographers
+                                {props.description2}
                                 <br/>
-                                All Edited Photos
+                                {props.description3}
                                 <br/>
-                                Private Online Gallery & Delivery
+                                {props.description4}
                                 <br/>
-                                Engagement Photo-shoot
+                                {props.description5}
                                 <br/>
-                                Evening Reception Coverage
+                                {props.description6}
                                 <br/>
-                                Duration: Till 10pm
-                                <br/>
-                                4-6 Weeks Editing
+                                {props.description7}
+
 
                                 </p>
-                            <p>KES 250,000</p>
-                            {/*<a href="/book-me">*/}
-                            {/*    <Button className="font-vollkorn uppercase text-2xl" text={"Book a session"}></Button>*/}
-                            {/*</a>*/}
+                            <p>{props.price}</p>
                         </div>
                     </div>
                 </div>
