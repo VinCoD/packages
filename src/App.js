@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
         <div>
-            <h1>Wedding Packages</h1>
+            <h1 className="mt-7 text-4xl md:text-5xl font-light font-brandonGrotesque" >Wedding Packages</h1>
 
-            <p>Our packages are designed to cater to all your photography needs,
+            <p className="pt-7 text-lg font-light font-brandonGrotesque px-4 md:px-36">Our packages are designed to cater to all your photography needs,
                 whether it's capturing your wedding day or creating stunning
                 portraits for your family. Each package is customized to
                 fit your unique requirements and budget.</p>
